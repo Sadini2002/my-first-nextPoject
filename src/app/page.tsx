@@ -1,5 +1,6 @@
 
 "use client";
+import Link from "next/link";
 
 import { useState } from "react";
 
@@ -43,9 +44,12 @@ export default function Home() {
             About
           </a>
 
-          <button className="rounded-full bg-blue-600 px-5 py-2 hover:bg-blue-700 transition">
-            Login
-          </button>
+          <Link
+  href="/login"
+  className="rounded-full bg-blue-600 px-5 py-2 hover:bg-blue-700 transition"
+>
+  Login
+</Link>
         </div>
 
         <button className="md:hidden rounded-lg border border-white/20 px-3 py-2">
